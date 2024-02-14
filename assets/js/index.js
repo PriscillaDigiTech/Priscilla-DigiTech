@@ -1,60 +1,86 @@
-const home = document.querySelector(".accueil");
-const about = document.querySelector(".about");
-const resume = document.querySelector(".resume");
-const portfolio = document.querySelector(".portfolio");
-const blog = document.querySelector(".blog");
-const contact = document.querySelector(".contact");
+const homeIcon = document.getElementById("home-icon");
+const aboutIcon = document.getElementById("about-icon");
+const resumeIcon = document.getElementById("resume-icon");
+const portfolioIcon = document.getElementById("portfolio-icon");
+const blogIcon = document.getElementById("blog-icon");
+const contactIcon = document.getElementById("contact-icon");
 
-home = () => {
-  home.style.visibility = "visible";
-  about.style.visibility = "hidden";
-  resume.style.visibility = "hidden";
-  portfolio.style.visibility = "hidden";
-  blog.style.visibility = "hidden";
-  contact.style.visibility = "hidden";
-};
+const pagesContainer = document.querySelector(".pages");
+const homeSection = document.querySelector(".accueil");
+const aboutSection = document.querySelector(".about");
+const resumeSection = document.querySelector(".resume");
+const portfolioSection = document.querySelector(".portfolio");
+const blogSection = document.querySelector(".blog");
+const contactSection = document.querySelector(".contact");
 
-about = () => {
-  home.style.visibility = "hidden";
-  about.style.visibility = "visible";
-  resume.style.visibility = "hidden";
-  portfolio.style.visibility = "hidden";
-  blog.style.visibility = "hidden";
-  contact.style.visibility = "hidden";
-};
+homeIcon.addEventListener(
+  "click",
+  (homeAffiche = () => {
+    homeSection.style.display = "flex";
+    aboutSection.style.display = "none";
+    resumeSection.style.display = "none";
+    portfolioSection.style.display = "none";
+    blogSection.style.display = "none";
+    contactSection.style.display = "none";
+  })
+);
 
-resume = () => {
-  home.style.visibility = "hidden";
-  about.style.visibility = "hidden";
-  resume.style.visibility = "visible";
-  portfolio.style.visibility = "hidden";
-  blog.style.visibility = "hidden";
-  contact.style.visibility = "hidden";
-};
+aboutIcon.addEventListener(
+  "click",
+  (aboutAffiche = () => {
+    homeSection.style.display = "none";
+    aboutSection.style.display = "block";
+    resumeSection.style.display = "none";
+    portfolioSection.style.display = "none";
+    blogSection.style.display = "none";
+    contactSection.style.display = "none";
+  })
+);
 
-portfolio = () => {
-  home.style.visibility = "hidden";
-  about.style.visibility = "hidden";
-  resume.style.visibility = "hidden";
-  portfolio.style.visibility = "visible";
-  blog.style.visibility = "hidden";
-  contact.style.visibility = "hidden";
-};
+resumeIcon.addEventListener(
+  "click",
+  (resumeAffiche = () => {
+    homeSection.style.display = "none";
+    aboutSection.style.display = "none";
+    resumeSection.style.display = "block";
+    portfolioSection.style.display = "none";
+    blogSection.style.display = "none";
+    contactSection.style.display = "none";
+  })
+);
 
-blog = () => {
-  home.style.visibility = "hidden";
-  about.style.visibility = "hidden";
-  resume.style.visibility = "hidden";
-  portfolio.style.visibility = "hidden";
-  blog.style.visibility = "visible";
-  contact.style.visibility = "hidden";
-};
+portfolioIcon.addEventListener(
+  "click",
+  (portfolioAffiche = () => {
+    homeSection.style.display = "none";
+    aboutSection.style.display = "none";
+    resumeSection.style.display = "none";
+    portfolioSection.style.display = "block";
+    blogSection.style.display = "none";
+    contactSection.style.display = "none";
+  })
+);
 
-contact = () => {
-  home.style.visibility = "hidden";
-  about.style.visibility = "hidden";
-  resume.style.visibility = "hidden";
-  portfolio.style.visibility = "hidden";
-  blog.style.visibility = "hidden";
-  contact.style.visibility = "visible";
-};
+blogIcon.addEventListener(
+  "click",
+  (blogAffiche = () => {
+    homeSection.style.display = "none";
+    aboutSection.style.display = "none";
+    resumeSection.style.display = "none";
+    portfolioSection.style.display = "none";
+    blogSection.style.display = "block";
+    contactSection.style.display = "none";
+  })
+);
+
+contactIcon.addEventListener(
+  "click",
+  (blogAffiche = () => {
+    homeSection.style.display = "none";
+    aboutSection.style.display = "none";
+    resumeSection.style.display = "none";
+    portfolioSection.style.display = "none";
+    blogSection.style.display = "none";
+    contactSection.style.display = "block";
+  })
+);
