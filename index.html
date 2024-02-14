@@ -3,11 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Priscilla MEZOUAR - Développeuse web freelance</title>
-
+    <title>Priscilla MEZOUAR - Développeuse Web freelance - Secrétaire</title>
+    <meta
+      name="description"
+      content="Priscilla MEZOUAR, développeuse web freelance et secrétaire professionnelle ! Consultez mon CV dès mainteant et contactez-moi !  "
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./assets/styles/index.css" />
   </head>
   <body>
+    <main>
+      <div class="container">
+        <div class="left-sidebar">
+          <div class="box">
+            <img
+              src="./assets/img/priscilla-mezouar.png"
+              alt="Priscilla MEZOUAR"
+            />
+            <h1>Priscilla MEZOUAR</h1>
+            <p>Développeuse Web<br />-<br />Secrétaire</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <button>Télécharger mon CV</button>
+          </div>
+        </div>
+        <div class="pages">
+          <section class="accueil">
+            <div>
+              <h2>Priscilla MEZOUAR</h2>
+              <h3>Développeuse Web freelance - Secrétaire</h3>
+            </div>
+          </section>
+          <section class="about"></section>
+          <section class="resume"></section>
+          <section class="portfolio"></section>
+          <section class="blog"></section>
+          <section class="contact"></section>
+        </div>
+        <div class="navsidebar">
+          <i
+            class="fa-solid fa-house-chimney"
+            id="home-icon"
+            onclick="home()"
+          ></i>
+          <i
+            class="fa-solid fa-address-card"
+            id="about-icon"
+            onclick="about()"
+          ></i>
+          <i
+            class="fa-solid fa-graduation-cap"
+            id="resume-icon"
+            onclick="resume()"
+          ></i>
+          <i
+            class="fa-solid fa-briefcase"
+            id="portfolio-icon"
+            onclick="portfolio()"
+          ></i>
+          <i class="fa-solid fa-book" id="blog-icon" onclick="blog()"></i>
+          <i
+            class="fa-solid fa-envelope"
+            id="contact-icon"
+            onclick="contact()"
+          ></i>
+        </div>
+      </div>
+      <div class="copyright">
+        <small
+          >©2024 | Priscilla MEZOUAR | Tous droits réservés.<br />Mentions
+          légales | CGU | Confidentialité</small
+        >
+      </div>
+    </main>
+
     <script src="./assets/js/index.js"></script>
   </body>
 </html>

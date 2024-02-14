@@ -1,0 +1,11 @@
+.pages {
+  height: 100%;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px 1px $blackShadow;
+  z-index: 1000;
+  background: $white1;
+  section {
+    box-sizing: border-box;
+  }
+}

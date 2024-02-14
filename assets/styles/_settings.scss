@@ -1,0 +1,64 @@
+//fonts
+
+@font-face {
+  font-family: "poppins-regular";
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "poppins-medium";
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+
+$font1: poppins-regular, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+$font2: poppins-medium, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+
+//colors
+
+$color1: #9e4ff3;
+$color2: #514ff4;
+$color3: #603fd6;
+$black1: #222222;
+$grey1: #888888;
+$grey2: #dedae4;
+$grey3: #ece8f2;
+$grey4: #333;
+$white1: #fff;
+$blackShadow: rgba(0, 0, 0, 0.25);
+$bg-gradient: linear-gradient($grey2, $grey3);
+$left-sidebar-gradient: linear-gradient($color1, $color2);
+
+//general
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: $font1;
+  font-size: 1rem;
+}
+
+body {
+  background: $bg-gradient;
+  text-align: center;
+
+  h2 {
+    color: $color3;
+  }
+  p {
+    color: $grey4;
+  }
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 20px 10px;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 20% 75% 5%;
+  grid-template-rows: 1fr;
+  align-items: center;
+}
