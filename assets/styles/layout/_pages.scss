@@ -5,7 +5,6 @@
   box-shadow: 0px 0px 0px 1px $blackShadow;
   z-index: 1000;
   background: $white1;
-  section {
-    box-sizing: border-box;
-  }
+  overflow-y: auto;
+  overflow-clip-margin: border-box;
 }

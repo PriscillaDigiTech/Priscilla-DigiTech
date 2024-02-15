@@ -6,4 +6,38 @@
   align-items: center;
   transition: 0.2s;
   display: none;
+
+  .container-about {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+
+    div {
+      padding: 0 20px;
+
+      h3 {
+        padding-bottom: 30px;
+        color: $color3;
+        font-size: 1.3rem;
+      }
+
+      i {
+        font-size: 1.3rem;
+        color: $color3;
+        text-align: center;
+      }
+      p {
+        span {
+          color: $color3;
+          font-family: $font2;
+        }
+      }
+    }
+
+    div:nth-child(2) {
+      line-height: 30px;
+    }
+  }
 }
