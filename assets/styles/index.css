@@ -62,7 +62,12 @@ body p {
   transition: 0.2s;
   display: none;
 }
-.about .grid-about-left {
+.about .container-about {
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.about .container-about .grid-about-left {
   display: grid;
   grid-template-columns: 20% 80%;
   -webkit-box-align: center;
@@ -71,26 +76,26 @@ body p {
   text-align: left;
   gap: 20px;
 }
-.about .grid-about-left div {
+.about .container-about .grid-about-left div {
   padding: 0 20px;
 }
-.about .grid-about-left div img {
+.about .container-about .grid-about-left div img {
   width: 100%;
 }
-.about .grid-about-left div h4 {
+.about .container-about .grid-about-left div h4 {
   padding-bottom: 10px;
   color: #fa255e;
   font-size: 1.3rem;
 }
-.about .grid-about-left div p {
+.about .container-about .grid-about-left div p {
   text-align: justify;
   padding-bottom: 20px;
 }
-.about .grid-about-left div p span {
+.about .container-about .grid-about-left div p span {
   color: #fa255e;
   font-family: poppins-medium, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-.about .grid-about-right {
+.about .container-about .grid-about-right {
   display: grid;
   grid-template-columns: 80% 20%;
   -webkit-box-align: center;
@@ -99,33 +104,33 @@ body p {
   text-align: left;
   gap: 20px;
 }
-.about .grid-about-right div {
+.about .container-about .grid-about-right div {
   padding: 0 20px;
 }
-.about .grid-about-right div img {
+.about .container-about .grid-about-right div img {
   width: 100%;
 }
-.about .grid-about-right div h4 {
+.about .container-about .grid-about-right div h4 {
   padding-bottom: 10px;
   color: #fa255e;
   font-size: 1.3rem;
 }
-.about .grid-about-right div p {
+.about .container-about .grid-about-right div p {
   text-align: justify;
   padding-bottom: 20px;
 }
-.about .grid-about-right div p span {
+.about .container-about .grid-about-right div p span {
   color: #fa255e;
   font-family: poppins-medium, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-.about li {
+.about .container-about li {
   list-style: none;
   color: #333;
 }
-.about li i {
+.about .container-about li i {
   color: #fa255e;
 }
-.about div:nth-child(2) {
+.about .container-about div:nth-child(2) {
   line-height: 30px;
 }
 
@@ -359,6 +364,86 @@ body p {
   transition: 0.2s;
   display: none;
 }
+.portfolio .portfolio-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  text-align: left;
+  gap: 10px;
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.portfolio .portfolio-container a {
+  text-decoration: none;
+  border: 1px solid #fa255e;
+  border-radius: 20px;
+  height: 100%;
+  text-align: center;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.portfolio .portfolio-container a:hover {
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+  background: #fa255e;
+  overflow: hidden;
+}
+.portfolio .portfolio-container a:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.portfolio .portfolio-container a:hover h4 {
+  color: #fff;
+}
+.portfolio .portfolio-container a:hover p {
+  color: #222222;
+}
+.portfolio .portfolio-container a div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.portfolio .portfolio-container a div img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 20px;
+}
+.portfolio .portfolio-container a div h4 {
+  padding-top: 15px;
+  color: #fa255e;
+  font-size: 1.2rem;
+}
+.portfolio .portfolio-container a div p {
+  padding: 30px;
+  color: #333;
+}
+.portfolio .portfolio-container a div p small {
+  font-size: 0.8rem;
+}
+.portfolio .portfolio-container div:nth-child(2) {
+  line-height: 30px;
+}
 
 .resume {
   padding: 50px 20px;
@@ -375,7 +460,6 @@ body p {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   display: none;
-  margin: 20px;
 }
 .resume .container-services {
   display: grid;
@@ -385,9 +469,14 @@ body p {
           align-items: start;
   text-align: left;
   gap: 10px;
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
-.resume .container-services div {
+.resume .container-services a {
+  text-decoration: none;
   border: 1px solid #fa255e;
+  border-radius: 20px;
   padding: 30px;
   height: 100%;
   text-align: center;
@@ -403,56 +492,47 @@ body p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
-.resume .container-services div:hover {
+.resume .container-services a:hover {
   -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+  background: #fa255e;
 }
-.resume .container-services div h4 {
+.resume .container-services a:hover i,
+.resume .container-services a:hover h4 {
+  color: #fff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.resume .container-services a:hover li {
+  color: #222222;
+}
+.resume .container-services a div h4 {
   padding-bottom: 15px;
   color: #fa255e;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
-.resume .container-services div i {
+.resume .container-services a div i {
   font-size: 2rem;
   color: #fa255e;
   text-align: center;
   padding-bottom: 20px;
 }
-.resume .container-services div ul {
+.resume .container-services a div ul {
   padding-bottom: 20px;
 }
-.resume .container-services div ul li {
+.resume .container-services a div ul li {
   text-align: justify;
   color: #333;
   list-style: none;
+  font-size: 0.9rem;
+  padding-bottom: 5px;
 }
-.resume .container-services div ul li i {
-  font-size: 1rem;
+.resume .container-services a div ul li i {
+  font-size: 0.9rem;
   padding-bottom: 0px;
-}
-.resume .container-services div button {
-  background: transparent;
-  border: 2px solid #fa255e;
-  padding: 5px 20px;
-  border-radius: 150px;
-  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
-  text-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  cursor: pointer;
-}
-.resume .container-services div button a {
-  color: #fa255e;
-  text-decoration: none;
-}
-.resume .container-services div button:hover {
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
-  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
-  text-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
 }
 .resume .container-services div:nth-child(2) {
   line-height: 30px;

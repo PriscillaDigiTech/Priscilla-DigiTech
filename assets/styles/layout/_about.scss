@@ -7,80 +7,86 @@
   transition: 0.2s;
   display: none;
 
-  .grid-about-left {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    align-items: center;
-    text-align: left;
-    gap: 20px;
+  .container-about {
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 50px;
 
-    div {
-      padding: 0 20px;
+    .grid-about-left {
+      display: grid;
+      grid-template-columns: 20% 80%;
+      align-items: center;
+      text-align: left;
+      gap: 20px;
 
-      img {
-        width: 100%;
-      }
+      div {
+        padding: 0 20px;
 
-      h4 {
-        padding-bottom: 10px;
-        color: $color1;
-        font-size: 1.3rem;
-      }
+        img {
+          width: 100%;
+        }
 
-      p {
-        text-align: justify;
-        padding-bottom: 20px;
-
-        span {
+        h4 {
+          padding-bottom: 10px;
           color: $color1;
-          font-family: $font2;
+          font-size: 1.3rem;
+        }
+
+        p {
+          text-align: justify;
+          padding-bottom: 20px;
+
+          span {
+            color: $color1;
+            font-family: $font2;
+          }
         }
       }
     }
-  }
 
-  .grid-about-right {
-    display: grid;
-    grid-template-columns: 80% 20%;
-    align-items: center;
-    text-align: left;
-    gap: 20px;
+    .grid-about-right {
+      display: grid;
+      grid-template-columns: 80% 20%;
+      align-items: center;
+      text-align: left;
+      gap: 20px;
 
-    div {
-      padding: 0 20px;
+      div {
+        padding: 0 20px;
 
-      img {
-        width: 100%;
-      }
+        img {
+          width: 100%;
+        }
 
-      h4 {
-        padding-bottom: 10px;
-        color: $color1;
-        font-size: 1.3rem;
-      }
-
-      p {
-        text-align: justify;
-        padding-bottom: 20px;
-
-        span {
+        h4 {
+          padding-bottom: 10px;
           color: $color1;
-          font-family: $font2;
+          font-size: 1.3rem;
+        }
+
+        p {
+          text-align: justify;
+          padding-bottom: 20px;
+
+          span {
+            color: $color1;
+            font-family: $font2;
+          }
         }
       }
     }
-  }
 
-  li {
-    list-style: none;
-    color: $grey4;
+    li {
+      list-style: none;
+      color: $grey4;
 
-    i {
-      color: $color1;
+      i {
+        color: $color1;
+      }
     }
-  }
 
-  div:nth-child(2) {
-    line-height: 30px;
+    div:nth-child(2) {
+      line-height: 30px;
+    }
   }
 }
