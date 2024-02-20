@@ -23,6 +23,12 @@ homeIcon.addEventListener(
     portfolioSection.style.display = "none";
     blogSection.style.display = "none";
     contactSection.style.display = "none";
+    homeIcon.style.color = "#fa255e";
+    aboutIcon.style.color = "#888888";
+    resumeIcon.style.color = "#888888";
+    portfolioIcon.style.color = "#888888";
+    blogIcon.style.color = "#888888";
+    contactIcon.style.color = "#888888";
   })
 );
 
@@ -35,6 +41,12 @@ aboutIcon.addEventListener(
     portfolioSection.style.display = "none";
     blogSection.style.display = "none";
     contactSection.style.display = "none";
+    homeIcon.style.color = "#888888";
+    aboutIcon.style.color = "#fa255e";
+    resumeIcon.style.color = "#888888";
+    portfolioIcon.style.color = "#888888";
+    blogIcon.style.color = "#888888";
+    contactIcon.style.color = "#888888";
   })
 );
 
@@ -47,6 +59,12 @@ resumeIcon.addEventListener(
     portfolioSection.style.display = "none";
     blogSection.style.display = "none";
     contactSection.style.display = "none";
+    homeIcon.style.color = "#888888";
+    aboutIcon.style.color = "#888888";
+    resumeIcon.style.color = "#fa255e";
+    portfolioIcon.style.color = "#888888";
+    blogIcon.style.color = "#888888";
+    contactIcon.style.color = "#888888";
   })
 );
 
@@ -59,6 +77,12 @@ portfolioIcon.addEventListener(
     portfolioSection.style.display = "block";
     blogSection.style.display = "none";
     contactSection.style.display = "none";
+    homeIcon.style.color = "#888888";
+    aboutIcon.style.color = "#888888";
+    resumeIcon.style.color = "#888888";
+    portfolioIcon.style.color = "#fa255e";
+    blogIcon.style.color = "#888888";
+    contactIcon.style.color = "#888888";
   })
 );
 
@@ -71,6 +95,12 @@ blogIcon.addEventListener(
     portfolioSection.style.display = "none";
     blogSection.style.display = "block";
     contactSection.style.display = "none";
+    homeIcon.style.color = "#888888";
+    aboutIcon.style.color = "#888888";
+    resumeIcon.style.color = "#888888";
+    portfolioIcon.style.color = "#888888";
+    blogIcon.style.color = "#fa255e";
+    contactIcon.style.color = "#888888";
   })
 );
 
@@ -83,6 +113,12 @@ contactIcon.addEventListener(
     portfolioSection.style.display = "none";
     blogSection.style.display = "none";
     contactSection.style.display = "block";
+    homeIcon.style.color = "#888888";
+    aboutIcon.style.color = "#888888";
+    resumeIcon.style.color = "#888888";
+    portfolioIcon.style.color = "#888888";
+    blogIcon.style.color = "#888888";
+    contactIcon.style.color = "#fa255e";
   })
 );
 
@@ -95,5 +131,7 @@ buttonServices.addEventListener(
     portfolioSection.style.display = "none";
     blogSection.style.display = "none";
     contactSection.style.display = "none";
+    homeIcon.style.color = "#888888";
+    resumeIcon.style.color = "#fa255e";
   })
 );
