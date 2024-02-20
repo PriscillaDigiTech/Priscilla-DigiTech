@@ -4,6 +4,7 @@ const resumeIcon = document.getElementById("resume-icon");
 const portfolioIcon = document.getElementById("portfolio-icon");
 const blogIcon = document.getElementById("blog-icon");
 const contactIcon = document.getElementById("contact-icon");
+const buttonServices = document.getElementById("button-services");
 
 const pagesContainer = document.querySelector(".pages");
 const homeSection = document.querySelector(".accueil");
@@ -82,5 +83,17 @@ contactIcon.addEventListener(
     portfolioSection.style.display = "none";
     blogSection.style.display = "none";
     contactSection.style.display = "block";
+  })
+);
+
+buttonServices.addEventListener(
+  "click",
+  (resumeAffiche = () => {
+    homeSection.style.display = "none";
+    aboutSection.style.display = "none";
+    resumeSection.style.display = "block";
+    portfolioSection.style.display = "none";
+    blogSection.style.display = "none";
+    contactSection.style.display = "none";
   })
 );

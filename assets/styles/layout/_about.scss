@@ -7,9 +7,9 @@
   transition: 0.2s;
   display: none;
 
-  .container-about {
+  .grid-about-left {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 20% 80%;
     align-items: center;
     text-align: left;
     gap: 20px;
@@ -17,27 +17,70 @@
     div {
       padding: 0 20px;
 
-      h3 {
-        padding-bottom: 30px;
-        color: $color3;
+      img {
+        width: 100%;
+      }
+
+      h4 {
+        padding-bottom: 10px;
+        color: $color1;
         font-size: 1.3rem;
       }
 
-      i {
-        font-size: 1.3rem;
-        color: $color3;
-        text-align: center;
-      }
       p {
+        text-align: justify;
+        padding-bottom: 20px;
+
         span {
-          color: $color3;
+          color: $color1;
           font-family: $font2;
         }
       }
     }
+  }
 
-    div:nth-child(2) {
-      line-height: 30px;
+  .grid-about-right {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+
+    div {
+      padding: 0 20px;
+
+      img {
+        width: 100%;
+      }
+
+      h4 {
+        padding-bottom: 10px;
+        color: $color1;
+        font-size: 1.3rem;
+      }
+
+      p {
+        text-align: justify;
+        padding-bottom: 20px;
+
+        span {
+          color: $color1;
+          font-family: $font2;
+        }
+      }
     }
+  }
+
+  li {
+    list-style: none;
+    color: $grey4;
+
+    i {
+      color: $color1;
+    }
+  }
+
+  div:nth-child(2) {
+    line-height: 30px;
   }
 }

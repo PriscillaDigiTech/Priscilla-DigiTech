@@ -25,7 +25,7 @@ body {
   text-align: center;
 }
 body h2 {
-  color: #603fd6;
+  color: #fa255e;
   font-size: 2rem;
   padding-bottom: 20px;
 }
@@ -62,33 +62,70 @@ body p {
   transition: 0.2s;
   display: none;
 }
-.about .container-about {
+.about .grid-about-left {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 20% 80%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: left;
   gap: 20px;
 }
-.about .container-about div {
+.about .grid-about-left div {
   padding: 0 20px;
 }
-.about .container-about div h3 {
-  padding-bottom: 30px;
-  color: #603fd6;
+.about .grid-about-left div img {
+  width: 100%;
+}
+.about .grid-about-left div h4 {
+  padding-bottom: 10px;
+  color: #fa255e;
   font-size: 1.3rem;
 }
-.about .container-about div i {
-  font-size: 1.3rem;
-  color: #603fd6;
-  text-align: center;
+.about .grid-about-left div p {
+  text-align: justify;
+  padding-bottom: 20px;
 }
-.about .container-about div p span {
-  color: #603fd6;
+.about .grid-about-left div p span {
+  color: #fa255e;
   font-family: poppins-medium, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-.about .container-about div:nth-child(2) {
+.about .grid-about-right {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  gap: 20px;
+}
+.about .grid-about-right div {
+  padding: 0 20px;
+}
+.about .grid-about-right div img {
+  width: 100%;
+}
+.about .grid-about-right div h4 {
+  padding-bottom: 10px;
+  color: #fa255e;
+  font-size: 1.3rem;
+}
+.about .grid-about-right div p {
+  text-align: justify;
+  padding-bottom: 20px;
+}
+.about .grid-about-right div p span {
+  color: #fa255e;
+  font-family: poppins-medium, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.about li {
+  list-style: none;
+  color: #333;
+}
+.about li i {
+  color: #fa255e;
+}
+.about div:nth-child(2) {
   line-height: 30px;
 }
 
@@ -111,8 +148,28 @@ body p {
   font-size: 2rem;
   padding-bottom: 20px;
 }
-.accueil div h3 {
-  padding-bottom: 20px;
+.accueil div p {
+  padding: 0 30px 30px 30px;
+}
+.accueil div button {
+  background: transparent;
+  border: 2px solid #fa255e;
+  padding: 5px 20px;
+  border-radius: 150px;
+  color: #fa255e;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.accueil div button:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
 }
 
 .blog {
@@ -180,20 +237,19 @@ body p {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9e4ff3), to(#514ff4));
-  background: linear-gradient(#9e4ff3, #514ff4);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ef94b0), to(#fa255e));
+  background: linear-gradient(#ef94b0, #fa255e);
   border-radius: 20px;
   -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
 }
 .left-sidebar img {
   width: 80%;
-  padding: 20px;
   background: #fff;
-  border-radius: 150px;
+  border-radius: 350px;
   -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .left-sidebar h1 {
   color: #fff;
@@ -222,7 +278,7 @@ body p {
 .left-sidebar button {
   background: transparent;
   border: 2px solid #fff;
-  padding: 5px 10px;
+  padding: 5px 20px;
   border-radius: 150px;
   color: #fff;
   -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
@@ -270,7 +326,7 @@ body p {
   cursor: pointer;
 }
 .navsidebar i:hover {
-  color: #603fd6;
+  color: #fa255e;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -319,4 +375,85 @@ body p {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   display: none;
+  margin: 20px;
+}
+.resume .container-services {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  text-align: left;
+  gap: 10px;
+}
+.resume .container-services div {
+  border: 1px solid #fa255e;
+  padding: 30px;
+  height: 100%;
+  text-align: center;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.resume .container-services div:hover {
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+}
+.resume .container-services div h4 {
+  padding-bottom: 15px;
+  color: #fa255e;
+  font-size: 1.3rem;
+}
+.resume .container-services div i {
+  font-size: 2rem;
+  color: #fa255e;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.resume .container-services div ul {
+  padding-bottom: 20px;
+}
+.resume .container-services div ul li {
+  text-align: justify;
+  color: #333;
+  list-style: none;
+}
+.resume .container-services div ul li i {
+  font-size: 1rem;
+  padding-bottom: 0px;
+}
+.resume .container-services div button {
+  background: transparent;
+  border: 2px solid #fa255e;
+  padding: 5px 20px;
+  border-radius: 150px;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.resume .container-services div button a {
+  color: #fa255e;
+  text-decoration: none;
+}
+.resume .container-services div button:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+}
+.resume div:nth-child(2) {
+  line-height: 30px;
 }/*# sourceMappingURL=index.css.map */
