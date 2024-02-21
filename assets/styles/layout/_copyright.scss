@@ -11,9 +11,17 @@
     line-height: 10px;
   }
   small {
+    color: $black1;
+
     font-size: 0.7rem;
     a {
-      color: $white1;
+      font-size: 0.7rem;
+      text-decoration: none;
+      color: $black1;
+      font-weight: normal;
+      &:hover {
+        color: $color1;
+      }
     }
   }
 }
