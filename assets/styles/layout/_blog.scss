@@ -1,9 +1,39 @@
 .blog {
-  padding: 50px 20px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.2s;
+  @include section;
   display: none;
+
+  .blog-container {
+    @include resumePortfolio;
+
+    a {
+      &:hover {
+        overflow: hidden;
+
+        img {
+          transform: scale(1.1);
+        }
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        img {
+          width: 100%;
+          border-radius: 20px 20px 0 0;
+        }
+
+        h4 {
+          padding: 15px;
+          color: $color1;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    div:nth-child(2) {
+      line-height: 30px;
+    }
+  }
 }

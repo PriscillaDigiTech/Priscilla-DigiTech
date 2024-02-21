@@ -2,6 +2,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
@@ -9,23 +10,49 @@
   border-radius: 20px;
   box-shadow: 0px 0px 0px 1px $blackShadow;
 
+  @media screen and (max-width: 1153px) {
+    margin: 0 10px;
+
+    .box {
+      display: grid;
+      grid-template-columns: 15% 50% 35%;
+      padding: 0;
+      gap: 0;
+      align-items: center;
+    }
+  }
+
   img {
     width: 80%;
     background: $white1;
     border-radius: 350px;
     box-shadow: 0px 0px 0px 1px $blackShadow;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 1153px) {
+      width: 100%;
+      margin-bottom: 0;
+    }
   }
 
   h1 {
     color: $white1;
     font-size: 1.3rem;
     padding-bottom: 20px;
+
+    @media screen and (max-width: 1153px) {
+      font-size: 1rem;
+      padding-bottom: 0;
+    }
   }
 
   p {
     color: $white1;
     padding-bottom: 20px;
+
+    @media screen and (max-width: 1153px) {
+      display: none;
+    }
   }
 
   i {
@@ -37,6 +64,11 @@
     cursor: pointer;
     transition: 0.2s;
 
+    @media screen and (max-width: 1153px) {
+      font-size: 1rem;
+      padding-bottom: 0;
+    }
+
     &:hover {
       transform: scale(1.1);
       text-shadow: 0px 0px 5px 1px $blackShadow;
@@ -44,20 +76,11 @@
   }
 
   button {
-    background: transparent;
     border: 2px solid $white1;
-    padding: 5px 20px;
-    border-radius: 150px;
     color: $white1;
-    box-shadow: 0px 0px 0px 1px $blackShadow;
-    text-shadow: 0px 0px 0px 1px $blackShadow;
-    transition: 0.2s;
-    cursor: pointer;
 
-    &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0px 0px 5px 1px $blackShadow;
-      text-shadow: 0px 0px 5px 1px $blackShadow;
+    @media screen and (max-width: 1153px) {
+      display: none;
     }
   }
 }

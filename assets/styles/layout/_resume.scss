@@ -1,46 +1,17 @@
 .resume {
-  padding: 50px 20px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.2s;
+  @include section;
   display: none;
 
   .container-services {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: start;
-    text-align: left;
-    gap: 10px;
-    width: 85%;
-    margin: 0 auto;
-    padding-bottom: 50px;
+    @include resumePortfolio;
 
     a {
-      text-decoration: none;
-      border: 1px solid $color1;
-      border-radius: 20px;
       padding: 30px;
-      height: 100%;
-      text-align: center;
-      box-shadow: 1px 1px 1px $blackShadow;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: 0.2s;
-      &:hover {
-        box-shadow: 1px 1px 10px $blackShadow;
-        background: $color1;
 
+      &:hover {
         i,
         h4 {
-          color: $white1;
           transform: scale(1.1);
-        }
-
-        li {
-          color: $black1;
         }
       }
 

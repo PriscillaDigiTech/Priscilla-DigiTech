@@ -1,20 +1,13 @@
 .about {
-  padding: 50px 20px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.2s;
+  @include section;
   display: none;
 
   .container-about {
-    width: 85%;
-    margin: 0 auto;
-    padding-bottom: 50px;
+    @include container;
 
-    .grid-about-left {
+    .grid-about-left,
+    .grid-about-right {
       display: grid;
-      grid-template-columns: 20% 80%;
       align-items: center;
       text-align: left;
       gap: 20px;
@@ -44,36 +37,12 @@
       }
     }
 
+    .grid-about-left {
+      grid-template-columns: 20% 80%;
+    }
+
     .grid-about-right {
-      display: grid;
       grid-template-columns: 80% 20%;
-      align-items: center;
-      text-align: left;
-      gap: 20px;
-
-      div {
-        padding: 0 20px;
-
-        img {
-          width: 100%;
-        }
-
-        h4 {
-          padding-bottom: 10px;
-          color: $color1;
-          font-size: 1.3rem;
-        }
-
-        p {
-          text-align: justify;
-          padding-bottom: 20px;
-
-          span {
-            color: $color1;
-            font-family: $font2;
-          }
-        }
-      }
     }
 
     li {

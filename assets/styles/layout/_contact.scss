@@ -1,9 +1,4 @@
 .contact {
-  padding: 50px 20px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.2s;
+  @include section;
   display: none;
 }

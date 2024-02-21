@@ -9,12 +9,21 @@
   margin: 10px 0;
   height: 100%;
 
+  @media screen and (max-width: 1153px) {
+    flex-direction: row;
+    margin: 0 10px;
+  }
+
   i {
     color: $grey1;
     font-size: 1.5rem;
     padding: 20px 0;
     transition: 0.2s;
     cursor: pointer;
+
+    @media screen and (max-width: 1153px) {
+      padding: 0 20px;
+    }
 
     &:hover {
       color: $color1;

@@ -5,6 +5,11 @@
   padding: 10px 0;
   text-align: center;
   line-height: 15px;
+
+  @media screen and (max-width: 1153px) {
+    padding: 25px 0 10px 0;
+    line-height: 10px;
+  }
   small {
     font-size: 0.7rem;
     a {
