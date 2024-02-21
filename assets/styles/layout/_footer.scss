@@ -1,0 +1,37 @@
+footer {
+  padding: 20px 0;
+  background: $color1;
+  display: flex;
+
+  @media screen and (max-width: 1153px) {
+    flex-direction: column;
+  }
+  div {
+    width: 85%;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1153px) {
+      padding-bottom: 15px;
+    }
+    p,
+    a {
+      color: $white1;
+      font-size: 0.9rem;
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        color: $black1;
+      }
+    }
+  }
+
+  .social-icons {
+    i {
+      font-size: 1.3rem;
+      padding: 0 10px;
+    }
+  }
+}

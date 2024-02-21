@@ -1,0 +1,34 @@
+header {
+  background: url(../img/bg-header.jpg) center/cover;
+
+  div {
+    background: rgba(0, 0, 0, 0.5);
+    height: 25vh;
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      text-align: center;
+      width: 80%;
+      color: $color1;
+      text-shadow: 1px 1px 10px $black1;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+    }
+
+    button {
+      a {
+        text-decoration: none;
+        color: $color1;
+      }
+      &:hover {
+        a {
+          color: $white1;
+        }
+        background: $color1;
+      }
+    }
+  }
+}
