@@ -1,8 +1,7 @@
 header {
-  background: url(../img/bg-header.jpg) center/cover;
+  background: $color1;
 
   div {
-    background: rgba(0, 0, 0, 0.5);
     height: 25vh;
     padding: 0 50px;
     display: flex;
@@ -12,22 +11,19 @@ header {
     h1 {
       text-align: center;
       width: 80%;
-      color: $color1;
-      text-shadow: 1px 1px 10px $black1;
+      color: $white1;
       font-size: 1.5rem;
       text-transform: uppercase;
     }
 
     button {
+      border: 2px solid $white1;
       a {
         text-decoration: none;
-        color: $color1;
-      }
-      &:hover {
-        a {
+        color: $white1;
+        &:hover {
           color: $white1;
         }
-        background: $color1;
       }
     }
   }

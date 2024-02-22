@@ -41,7 +41,7 @@ $left-sidebar-gradient: linear-gradient($color2, $color1);
 }
 
 @mixin container {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   padding-bottom: 50px;
 }
