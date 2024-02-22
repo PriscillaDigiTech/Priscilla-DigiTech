@@ -34,6 +34,11 @@ body h2 {
   font-size: 2rem;
   padding-bottom: 20px;
 }
+@media screen and (max-width: 1153px) {
+  body h2 {
+    font-size: 1.5rem;
+  }
+}
 body p {
   color: #333;
 }
@@ -135,8 +140,18 @@ body button:hover {
 .about .container-about .grid-about-left {
   grid-template-columns: 20% 80%;
 }
+@media screen and (max-width: 1153px) {
+  .about .container-about .grid-about-left {
+    grid-template-columns: 1fr;
+  }
+}
 .about .container-about .grid-about-right {
   grid-template-columns: 80% 20%;
+}
+@media screen and (max-width: 1153px) {
+  .about .container-about .grid-about-right {
+    grid-template-columns: 1fr;
+  }
 }
 .about .container-about li {
   list-style: none;
@@ -167,10 +182,7 @@ body button:hover {
 .accueil div {
   width: 85%;
   margin: 0 auto;
-}
-.accueil div h2 {
-  font-size: 2rem;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 .accueil div p {
   padding-bottom: 30px;
@@ -262,7 +274,7 @@ body button:hover {
       justify-content: space-around;
 }
 .blog .blog-container a div img {
-  width: 100%;
+  height: 240px;
   border-radius: 20px 20px 0 0;
 }
 .blog .blog-container a div h4 {
@@ -297,7 +309,7 @@ body button:hover {
 }
 @media screen and (max-width: 1153px) {
   .contact .container-contact {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
   }
 }
 .contact .container-contact h4 {
@@ -894,7 +906,20 @@ main section #services-list-3 div h3 {
   color: #fa255e;
   padding-bottom: 20px;
 }
-main section #services-list .conclusion p,
-main section #services-list-3 .conclusion p {
+main section .article {
+  text-align: left;
+}
+main section .conclusion p {
   margin-top: 30px;
+}
+main section .CTA {
+  margin-top: 30px;
+  border-top: 1px dotted #fa255e;
+}
+main section .CTA p {
+  padding-bottom: 30px;
+}
+main section .CTA button a {
+  color: #fa255e;
+  text-decoration: none;
 }/*# sourceMappingURL=index.css.map */

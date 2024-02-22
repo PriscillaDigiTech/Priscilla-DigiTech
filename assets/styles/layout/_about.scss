@@ -39,10 +39,19 @@
 
     .grid-about-left {
       grid-template-columns: 20% 80%;
+
+      @media screen and (max-width: 1153px) {
+        grid-template-columns: 1fr;
+      }
     }
 
     .grid-about-right {
       grid-template-columns: 80% 20%;
+
+      @media screen and (max-width: 1153px) {
+        grid-template-columns: 1fr;
+        //AJOUTER INVERSION DES COLONNES !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      }
     }
 
     li {

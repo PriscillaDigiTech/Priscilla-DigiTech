@@ -49,10 +49,29 @@ main {
           padding-bottom: 20px;
         }
       }
+    }
+    .article {
+      text-align: left;
+    }
 
-      .conclusion {
-        p {
-          margin-top: 30px;
+    .conclusion {
+      p {
+        margin-top: 30px;
+      }
+    }
+
+    .CTA {
+      margin-top: 30px;
+      border-top: 1px dotted $color1;
+
+      p {
+        padding-bottom: 30px;
+      }
+
+      button {
+        a {
+          color: $color1;
+          text-decoration: none;
         }
       }
     }

@@ -106,7 +106,7 @@ blogIcon.addEventListener(
 
 contactIcon.addEventListener(
   "click",
-  (blogAffiche = () => {
+  (contactAffiche = () => {
     homeSection.style.display = "none";
     aboutSection.style.display = "none";
     resumeSection.style.display = "none";
