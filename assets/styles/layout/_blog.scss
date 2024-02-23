@@ -6,9 +6,9 @@
     @include resumePortfolio;
 
     a {
+      text-align: center;
       &:hover {
         overflow: hidden;
-
         img {
           transform: scale(1.1);
         }
