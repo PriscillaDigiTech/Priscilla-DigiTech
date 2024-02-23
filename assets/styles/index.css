@@ -151,6 +151,13 @@ body button:hover {
 @media screen and (max-width: 1153px) {
   .about .container-about .grid-about-right {
     grid-template-columns: 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 .about .container-about li {
@@ -922,4 +929,28 @@ main section .CTA p {
 main section .CTA button a {
   color: #fa255e;
   text-decoration: none;
+}
+main section .intro a {
+  color: #fa255e;
+  text-decoration: none;
+}
+main section .intro a:hover {
+  color: #222222;
+}
+main section #legal {
+  text-align: justify;
+}
+main section #legal a {
+  color: #fa255e;
+  text-decoration: none;
+}
+main section #legal a:hover {
+  color: #222222;
+}
+main section #legal ul {
+  padding: 10px 0;
+  list-style-position: inside;
+}
+main section #legal ul li {
+  color: #333;
 }/*# sourceMappingURL=index.css.map */

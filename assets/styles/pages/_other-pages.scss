@@ -75,5 +75,36 @@ main {
         }
       }
     }
+
+    .intro {
+      a {
+        color: $color1;
+        text-decoration: none;
+
+        &:hover {
+          color: $black1;
+        }
+      }
+    }
+    #legal {
+      text-align: justify;
+
+      a {
+        color: $color1;
+        text-decoration: none;
+
+        &:hover {
+          color: $black1;
+        }
+      }
+
+      ul {
+        padding: 10px 0;
+        list-style-position: inside;
+        li {
+          color: $grey4;
+        }
+      }
+    }
   }
 }
