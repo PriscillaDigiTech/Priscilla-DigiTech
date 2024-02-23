@@ -22,12 +22,20 @@
         img {
           height: 240px;
           border-radius: 20px 20px 0 0;
+          @media screen and (max-width: 1153px) {
+            height: auto;
+            width: 100%;
+          }
         }
 
         h4 {
           padding: 15px;
           color: $color1;
           font-size: 1.2rem;
+
+          @media screen and (max-width: 1153px) {
+            text-align: center;
+          }
         }
       }
     }

@@ -11,7 +11,8 @@
   box-shadow: 0px 0px 0px 1px $blackShadow;
 
   @media screen and (max-width: 1153px) {
-    margin: 0 10px;
+    margin: 0 auto;
+    width: 90%;
 
     .box {
       display: grid;
@@ -66,7 +67,7 @@
 
     @media screen and (max-width: 1153px) {
       font-size: 1rem;
-      padding-bottom: 0;
+      padding: 0 3px;
     }
 
     &:hover {

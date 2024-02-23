@@ -10,4 +10,9 @@
       padding-bottom: 30px;
     }
   }
+
+  @media screen and (max-width: 1153px) {
+    margin: 50px auto;
+    width: 80%;
+  }
 }

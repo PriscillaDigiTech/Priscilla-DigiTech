@@ -7,4 +7,10 @@
   background: $white1;
   overflow-y: auto;
   overflow-clip-margin: border-box;
+
+  @media screen and (max-width: 1153px) {
+    margin: 0 auto;
+    width: 90%;
+    padding: 50px 20px;
+  }
 }

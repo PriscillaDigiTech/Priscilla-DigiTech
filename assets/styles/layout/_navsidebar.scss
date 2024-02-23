@@ -10,8 +10,9 @@
   height: 100%;
 
   @media screen and (max-width: 1153px) {
+    margin: 0 auto;
+    width: 90%;
     flex-direction: row;
-    margin: 0 10px;
   }
 
   i {
@@ -22,7 +23,7 @@
     cursor: pointer;
 
     @media screen and (max-width: 1153px) {
-      padding: 0 20px;
+      padding: 0 10px;
     }
 
     &:hover {

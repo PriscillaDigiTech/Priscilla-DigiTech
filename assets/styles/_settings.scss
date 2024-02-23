@@ -38,6 +38,10 @@ $left-sidebar-gradient: linear-gradient($color2, $color1);
   justify-content: center;
   align-items: center;
   transition: 0.2s;
+
+  @media screen and (max-width: 1153px) {
+    padding: 0;
+  }
 }
 
 @mixin container {
