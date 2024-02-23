@@ -147,6 +147,7 @@ body {
   align-items: center;
 
   @media screen and (max-width: 1153px) {
+    width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 15% 75% 10%;
     row-gap: 10px;
