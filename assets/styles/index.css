@@ -1043,6 +1043,9 @@ main section #services-list-3 div h3 {
 main section .article {
   text-align: justify;
 }
+main section .article h4 {
+  text-align: center;
+}
 main section .conclusion p {
   margin-top: 30px;
 }
