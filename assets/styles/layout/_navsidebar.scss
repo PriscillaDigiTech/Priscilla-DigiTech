@@ -15,20 +15,49 @@
     flex-direction: row;
   }
 
-  i {
-    color: $grey1;
-    font-size: 1.5rem;
-    padding: 20px 0;
+  div {
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    justify-content: center;
     transition: 0.2s;
-    cursor: pointer;
 
-    @media screen and (max-width: 1153px) {
-      padding: 0 10px;
+    p {
+      display: none;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      background: $color1;
+      color: $white1;
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      width: 120px;
+      border-radius: 50px;
+      transform: translateX(-80px);
+      z-index: 1000000;
     }
 
+    i {
+      color: $grey1;
+      font-size: 1.5rem;
+      padding: 20px 0;
+      transition: 0.2s;
+      cursor: pointer;
+
+      @media screen and (max-width: 1153px) {
+        padding: 0 10px;
+      }
+    }
     &:hover {
-      color: $color1;
-      transform: scale(1.1);
+      i {
+        color: $color1;
+        transform: scale(1.1);
+      }
+
+      p {
+        display: flex;
+      }
     }
   }
 }
