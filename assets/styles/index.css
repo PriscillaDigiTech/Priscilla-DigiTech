@@ -657,7 +657,7 @@ body button:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-.navsidebar div p {
+.navsidebar div .bulle {
   display: none;
   position: absolute;
   -webkit-box-pack: center;
@@ -666,7 +666,7 @@ body button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #fa255e;
+  background: #888888;
   color: #fff;
   padding: 10px 20px;
   font-size: 0.9rem;
@@ -694,7 +694,7 @@ body button:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-.navsidebar div:hover p {
+.navsidebar div:hover .bulle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

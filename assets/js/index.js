@@ -13,6 +13,13 @@ const resumeSection = document.querySelector(".resume");
 const portfolioSection = document.querySelector(".portfolio");
 const blogSection = document.querySelector(".blog");
 const contactSection = document.querySelector(".contact");
+const bulle = document.querySelector(".bulle");
+const homeBulle = document.querySelector(".homeBulle");
+const aboutBulle = document.querySelector(".aboutBulle");
+const resumeBulle = document.querySelector(".resumeBulle");
+const portfolioBulle = document.querySelector(".portfolioBulle");
+const blogBulle = document.querySelector(".blogBulle");
+const contactBulle = document.querySelector(".contactBulle");
 
 homeIcon.addEventListener(
   "click",
@@ -29,6 +36,24 @@ homeIcon.addEventListener(
     portfolioIcon.style.color = "#888888";
     blogIcon.style.color = "#888888";
     contactIcon.style.color = "#888888";
+    homeBulle.style.background = "#fa255e";
+    aboutBulle.style.background = "white";
+    resumeBulle.style.background = "white";
+    portfolioBulle.style.background = "white";
+    blogBulle.style.background = "white";
+    contactBulle.style.background = "white";
+    homeBulle.style.color = "white";
+    aboutBulle.style.color = "#888888";
+    resumeBulle.style.color = "#888888";
+    portfolioBulle.style.color = "#888888";
+    blogBulle.style.color = "#888888";
+    contactBulle.style.color = "#888888";
+    homeBulle.style.border = "1px solid #fa255e";
+    aboutBulle.style.border = "1px solid #888888";
+    resumeBulle.style.border = "1px solid #888888";
+    portfolioBulle.style.border = "1px solid #888888";
+    blogBulle.style.border = "1px solid #888888";
+    contactBulle.style.border = "1px solid #888888";
   })
 );
 
@@ -47,6 +72,24 @@ aboutIcon.addEventListener(
     portfolioIcon.style.color = "#888888";
     blogIcon.style.color = "#888888";
     contactIcon.style.color = "#888888";
+    homeBulle.style.background = "white";
+    aboutBulle.style.background = "#fa255e";
+    resumeBulle.style.background = "white";
+    portfolioBulle.style.background = "white";
+    blogBulle.style.background = "white";
+    contactBulle.style.background = "white";
+    homeBulle.style.color = "#888888";
+    aboutBulle.style.color = "white";
+    resumeBulle.style.color = "#888888";
+    portfolioBulle.style.color = "#888888";
+    blogBulle.style.color = "#888888";
+    contactBulle.style.color = "#888888";
+    homeBulle.style.border = "1px solid #888888";
+    aboutBulle.style.border = "1px solid #fa255e";
+    resumeBulle.style.border = "1px solid #888888";
+    portfolioBulle.style.border = "1px solid #888888";
+    blogBulle.style.border = "1px solid #888888";
+    contactBulle.style.border = "1px solid #888888";
   })
 );
 
@@ -65,6 +108,25 @@ resumeIcon.addEventListener(
     portfolioIcon.style.color = "#888888";
     blogIcon.style.color = "#888888";
     contactIcon.style.color = "#888888";
+
+    homeBulle.style.background = "white";
+    aboutBulle.style.background = "white";
+    resumeBulle.style.background = "#fa255e";
+    portfolioBulle.style.background = "white";
+    blogBulle.style.background = "white";
+    contactBulle.style.background = "white";
+    homeBulle.style.color = "#888888";
+    aboutBulle.style.color = "#888888";
+    resumeBulle.style.color = "white";
+    portfolioBulle.style.color = "#888888";
+    blogBulle.style.color = "#888888";
+    contactBulle.style.color = "#888888";
+    homeBulle.style.border = "1px solid #888888";
+    aboutBulle.style.border = "1px solid #888888";
+    resumeBulle.style.border = "1px solid #fa255e";
+    portfolioBulle.style.border = "1px solid #888888";
+    blogBulle.style.border = "1px solid #888888";
+    contactBulle.style.border = "1px solid #888888";
   })
 );
 
@@ -83,6 +145,25 @@ portfolioIcon.addEventListener(
     portfolioIcon.style.color = "#fa255e";
     blogIcon.style.color = "#888888";
     contactIcon.style.color = "#888888";
+
+    homeBulle.style.background = "white";
+    aboutBulle.style.background = "white";
+    resumeBulle.style.background = "white";
+    portfolioBulle.style.background = "#fa255e";
+    blogBulle.style.background = "white";
+    contactBulle.style.background = "white";
+    homeBulle.style.color = "#888888";
+    aboutBulle.style.color = "#888888";
+    resumeBulle.style.color = "#888888";
+    portfolioBulle.style.color = "white";
+    blogBulle.style.color = "#888888";
+    contactBulle.style.color = "#888888";
+    homeBulle.style.border = "1px solid #888888";
+    aboutBulle.style.border = "1px solid #888888";
+    resumeBulle.style.border = "1px solid #888888";
+    portfolioBulle.style.border = "1px solid #fa255e";
+    blogBulle.style.border = "1px solid #888888";
+    contactBulle.style.border = "1px solid #888888";
   })
 );
 
@@ -101,6 +182,25 @@ blogIcon.addEventListener(
     portfolioIcon.style.color = "#888888";
     blogIcon.style.color = "#fa255e";
     contactIcon.style.color = "#888888";
+
+    homeBulle.style.background = "white";
+    aboutBulle.style.background = "white";
+    resumeBulle.style.background = "white";
+    portfolioBulle.style.background = "white";
+    blogBulle.style.background = "#fa255e";
+    contactBulle.style.background = "white";
+    homeBulle.style.color = "#888888";
+    aboutBulle.style.color = "#888888";
+    resumeBulle.style.color = "#888888";
+    portfolioBulle.style.color = "#888888";
+    blogBulle.style.color = "white";
+    contactBulle.style.color = "#888888";
+    homeBulle.style.border = "1px solid #888888";
+    aboutBulle.style.border = "1px solid #888888";
+    resumeBulle.style.border = "1px solid #888888";
+    portfolioBulle.style.border = "1px solid #888888";
+    blogBulle.style.border = "1px solid #fa255e";
+    contactBulle.style.border = "1px solid #888888";
   })
 );
 
@@ -119,6 +219,25 @@ contactIcon.addEventListener(
     portfolioIcon.style.color = "#888888";
     blogIcon.style.color = "#888888";
     contactIcon.style.color = "#fa255e";
+
+    homeBulle.style.background = "white";
+    aboutBulle.style.background = "white";
+    resumeBulle.style.background = "white";
+    portfolioBulle.style.background = "white";
+    blogBulle.style.background = "white";
+    contactBulle.style.background = "#fa255e";
+    homeBulle.style.color = "#888888";
+    aboutBulle.style.color = "#888888";
+    resumeBulle.style.color = "#888888";
+    portfolioBulle.style.color = "#888888";
+    blogBulle.style.color = "#888888";
+    contactBulle.style.color = "white";
+    homeBulle.style.border = "1px solid #888888";
+    aboutBulle.style.border = "1px solid #888888";
+    resumeBulle.style.border = "1px solid #888888";
+    portfolioBulle.style.border = "1px solid #888888";
+    blogBulle.style.border = "1px solid #888888";
+    contactBulle.style.border = "1px solid #fa255e";
   })
 );
 

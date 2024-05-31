@@ -23,12 +23,12 @@
     justify-content: center;
     transition: 0.2s;
 
-    p {
+    .bulle {
       display: none;
       position: absolute;
       justify-content: center;
       align-items: center;
-      background: $color1;
+      background: $grey1;
       color: $white1;
       padding: 10px 20px;
       font-size: 0.9rem;
@@ -55,7 +55,7 @@
         transform: scale(1.1);
       }
 
-      p {
+      .bulle {
         display: flex;
       }
     }
